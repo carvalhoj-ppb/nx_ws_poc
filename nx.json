@@ -25,8 +25,7 @@
         "test": {
             "inputs": [
                 "{projectRoot}/**/**/*.test.js"
-            ],
-            "dependsOn": ["^build"]
+            ]
         }
     }
 }

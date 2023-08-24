@@ -73,7 +73,7 @@ When build the nx.json file we can tell to nx to not look to that custom files, 
       "inputs": ["!{projectRoot}/**/*.md"]
     },
     "test": {
-      "inputs": ["!{projectRoot/**/*.md}"]
+      "inputs": ["!{projectRoot/**/*.md"]
     },
 
   }
@@ -84,7 +84,7 @@ and to not repeat the inputs that we want to avoid, we can define before, e.g:
 {
   ...,
   "namedInputs":{
-    "noMarkdown": ["!{projectRoot/**/*.md"]
+    "noMarkdown": ["!{projectRoot}/**/*.md"]
   },
   "targetDefaults": {
     "build": {
@@ -97,6 +97,11 @@ and to not repeat the inputs that we want to avoid, we can define before, e.g:
   }
 }
 
+
+#### CI
+- Nx provides CI configurations like [Nx CI config](https://nx.dev/recipes/ci/monorepo-ci-github-actions#configuring-ci-using-github-actions-and-nx)
+  - Jenkins
+  - Github Actions
 
 #### Adding Nx to NPM/Yarn/PNPM Workspace
 

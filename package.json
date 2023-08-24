@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "POC",
   "scripts": {
-    "test": "npm run test"
+    "test": "npm run test",
+    "affected": "npx nx affected:graph --base=master --head=HEAD"
   },
   "engines": {
     "node": "^16.0.0",

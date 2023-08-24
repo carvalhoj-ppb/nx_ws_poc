@@ -4,7 +4,8 @@
   "description": "POC",
   "scripts": {
     "test": "npm run test",
-    "affected": "npx nx affected:graph --base=master --head=HEAD"
+    "affected": "npx nx affected:graph --base=master --head=HEAD",
+    "build": " npx nx run-many -t build"
   },
   "engines": {
     "node": "^16.0.0",
@@ -25,6 +26,7 @@
   },
   "homepage": "https://github.com/carvalhoj-ppb/nx_ws_poc#readme",
   "devDependencies": {
-    "nx": "^16.7.4"
+    "nx": "^16.7.4",
+    "prettier": "^3.0.2"
   }
 }

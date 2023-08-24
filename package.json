@@ -1,0 +1,26 @@
+{
+  "name": "nx_ws_poc",
+  "version": "1.0.0",
+  "description": "POC",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "engines": {
+    "node": "^16.0.0",
+    "npm": ">=7.0.0"
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carvalhoj-ppb/nx_ws_poc.git"
+  },
+  "author": "Joao Carvalho",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/carvalhoj-ppb/nx_ws_poc/issues"
+  },
+  "homepage": "https://github.com/carvalhoj-ppb/nx_ws_poc#readme"
+}

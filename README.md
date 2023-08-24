@@ -132,4 +132,5 @@ We also have this tooling on plaform
 
 # SCRIPTS
 
-npx nx build store ---> build package store
+npx nx build store ---> build package store 
+

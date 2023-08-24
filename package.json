@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "POC",
   "scripts": {
-    "test": "npm run test",
+    "test": "npx nx run-many -t test",
     "affected": "npx nx affected:graph --base=master --head=HEAD",
-    "build": " npx nx run-many -t build"
+    "build": "npx nx run-many -t build"
   },
   "engines": {
     "node": "^16.0.0",

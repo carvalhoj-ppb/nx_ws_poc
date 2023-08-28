@@ -12,7 +12,7 @@ PACKAGE BASED - MONOREPO
   /services/
 
 - ppsb-platform
- /modules/routing ( to be done )
+ /modules/routing
  /modules/utils
  /modules/catalogue
  /modules/analytics
@@ -75,7 +75,7 @@ When build the nx.json file we can tell to nx to not look to that custom files, 
       "inputs": ["!{projectRoot}/**/*.md"]
     },
     "test": {
-      "inputs": ["!{projectRoot/**/*.md"]
+      "inputs": ["!{projectRoot}/**/*.md"]
     },
 
   }
@@ -118,13 +118,6 @@ As a result, if you have an existing NPM/Yarn or PNPM-based monorepo setup, you 
 
 This is a low-impact operation because all that needs to be done is to install the nx package at the root level and add an nx.json for configuring caching and task pipelines.
 
-[Nx instalation on npm workspaces](https://nx.dev/recipes/adopting-nx/adding-to-monorepo#installing-nx) 
-
- npm add store -w my-app --> command to add packages 
-           |           |   
-           ^           ^
-    package to add     package destiny
-
 
 ### npm workspaces
 
@@ -134,7 +127,7 @@ This set of features makes up for a much more streamlined workflow handling link
 
 We also refer to these packages being auto-symlinked during npm install as a single workspace, meaning it's a nested package within the current local file system that is explicitly defined in the package.json workspaces configuration.
 
-We also have this tooling on plaform
+We also have this tooling on platform
 
 
 # SCRIPTS

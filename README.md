@@ -1,5 +1,7 @@
 # Investigate
 
+PACKAGE BASED - MONOREPO
+
 ### Struct
 
 - ppsb-web ( monorepo )
@@ -140,3 +142,6 @@ We also have this tooling on plaform
 npx nx build store ---> build package store 
 npx nx run-many -t test
 
+case when running build:
+  when some chages in the store package -> services dont build ( use cache), build the other
+  when there are some changes in services ( new feat or new dependecies) when build, build all because of the dependecies

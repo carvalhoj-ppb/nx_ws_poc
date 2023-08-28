@@ -1,7 +1,8 @@
-import sumWith4 from "../services";
+import sumWith4 from "services"
 
 function sum(number){
-    return sumWith4(number) + 1;
+    let n = 1 ;
+    return sumWith4(number) + 1 + n;
 }
 
 export default sum;

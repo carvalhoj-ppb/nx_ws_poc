@@ -10,7 +10,7 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
-        <button>{sum(1)}</button>
+        <button>{sum(1)}</button> 
         <a
           className="App-link"
           href="https://reactjs.org"

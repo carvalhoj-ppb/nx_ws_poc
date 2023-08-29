@@ -1,7 +1,7 @@
 import sumWith4 from "services"
 
 function sum(number){
-    let n = 1 ;
+    let n = 2 ;
     return sumWith4(number) + 1 + n;
 }
 
